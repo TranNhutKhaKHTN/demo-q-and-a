@@ -22,7 +22,7 @@ const Question = ({ question, listQuestion }: any) => {
           return (
             <Link
               key={item.id}
-              href={`/${item.category}/${item?.name}`}
+              href={`/${item.category}/${item?.id}`}
               className="hover:underline block"
             >
               {item?.name}
