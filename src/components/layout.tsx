@@ -6,8 +6,6 @@ const Layout = ({
   children,
   menuData,
 }: PropsWithChildren<{ menuData?: any }>) => {
-  console.log(menuData);
-
   const renderMenu = menuData?.map((item: any) => ({
     key: item?.id,
     label: item?.name,
@@ -35,7 +33,7 @@ const Layout = ({
             items={renderMenu}
           />
         </div>
-        <div className="flex flex-col pl-4 w-full">{children}</div>
+        <div className="flex flex-col pl-10 pr-6 w-full">{children}</div>
       </div>
     </Card>
   );

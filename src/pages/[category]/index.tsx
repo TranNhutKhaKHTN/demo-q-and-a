@@ -1,11 +1,20 @@
 import { Button } from "antd";
 import { GetStaticPaths } from "next";
+import Link from "next/link";
 
 const CategoryPage = ({ questions }: any) => {
   return (
     <div className="flex flex-col gap-4">
       {questions?.map((item: any) => {
-        return <Button key={item.id}>{item?.name}</Button>;
+        return (
+          <Link
+            key={item.id}
+            href={`${item.category}/${item.id}`}
+            className="block hover:underline"
+          >
+            <div key={item.id}>{item?.name}</div>
+          </Link>
+        );
       })}
     </div>
   );
