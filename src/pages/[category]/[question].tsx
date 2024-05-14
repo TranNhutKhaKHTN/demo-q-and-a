@@ -27,21 +27,21 @@ export const getStaticProps = async ({ params }: any) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const request = await fetch("https://demo-q-and-a.vercel.app/api/question");
-  const questions = await request.json();
+  // const request = await fetch("https://demo-q-and-a.vercel.app/api/question");
+  // const questions = await request.json();
 
-  console.log("-----------------------");
-  console.log(questions);
+  // console.log("-----------------------");
+  // console.log(questions);
 
-  const paths = questions.map((item: any) => ({
-    params: {
-      category: item.category?.toString(),
-      question: item?.id?.toString(),
-    },
-  }));
+  // const paths = questions.map((item: any) => ({
+  //   params: {
+  //     category: item.category?.toString(),
+  //     question: item?.id?.toString(),
+  //   },
+  // }));
 
   return {
-    paths,
+    paths: [],
     fallback: true,
   };
 };
