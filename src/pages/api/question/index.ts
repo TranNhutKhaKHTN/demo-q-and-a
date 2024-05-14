@@ -33,6 +33,14 @@ const questions = (req: NextApiRequest, res: any) => {
         category: 4,
         name: "Update account 2",
       },
+      {
+        category: 5,
+        name: "Gia đình 1",
+      },
+      {
+        category: 5,
+        name: "Gia đình 2",
+      },
     ]?.filter((item) =>
       req?.query?.category ? category === item.category.toString() : true
     )

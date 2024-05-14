@@ -24,6 +24,12 @@ const getCategories = (_: any, res: any) => {
       des: "Update tài khoản",
       menu: 1,
     },
+    {
+      id: 5,
+      name: "Gia đình",
+      des: "Gia đình",
+      menu: 1,
+    },
   ]);
 };
 
