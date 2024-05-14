@@ -37,43 +37,43 @@ const Question = ({ question, listQuestion }: any) => {
 export default Question;
 
 export const getStaticProps = async ({ params }: any) => {
-  const menu = await fetch("https://demo-q-and-a.vercel.app/api/menu");
-  const menuData = await menu.json();
+  // const menu = await fetch("https://demo-q-and-a.vercel.app/api/menu");
+  // const menuData = await menu.json();
 
-  const listQuestionReq = await fetch(
-    `https://demo-q-and-a.vercel.app/api/question?category=${params.category}`
-  );
-  const listQuestion = await listQuestionReq.json();
+  // const listQuestionReq = await fetch(
+  //   `https://demo-q-and-a.vercel.app/api/question?category=${params.category}`
+  // );
+  // const listQuestion = await listQuestionReq.json();
 
-  const questionReq = await fetch(
-    `https://demo-q-and-a.vercel.app/api/question/${params?.question}`
-  );
+  // const questionReq = await fetch(
+  //   `https://demo-q-and-a.vercel.app/api/question/${params?.question}`
+  // );
 
-  const question = await questionReq.json();
+  // const question = await questionReq.json();
 
   return {
     props: {
-      question,
-      menuData,
-      listQuestion,
+      // question,
+      // menuData,
+      // listQuestion,
     },
     revalidate: 10,
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const request = await fetch("https://demo-q-and-a.vercel.app/api/question");
-  const questions = await request.json();
+  // const request = await fetch("https://demo-q-and-a.vercel.app/api/question");
+  // const questions = await request.json();
 
-  const paths = questions.map((item: any) => ({
-    params: {
-      category: item.category?.toString(),
-      question: item?.id?.toString(),
-    },
-  }));
+  // const paths = questions.map((item: any) => ({
+  //   params: {
+  //     category: item.category?.toString(),
+  //     question: item?.id?.toString(),
+  //   },
+  // }));
 
   return {
-    paths: paths,
+    paths: [],
     fallback: true,
   };
 };
