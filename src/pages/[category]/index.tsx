@@ -22,6 +22,7 @@ export const getStaticProps = async ({ params }: any) => {
     props: {
       questions: listQuestion,
     },
+    revalidate: 10,
   };
 };
 
