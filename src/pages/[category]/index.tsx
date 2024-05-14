@@ -1,10 +1,11 @@
+import { Button } from "antd";
 import { GetStaticPaths } from "next";
 
 const CategoryPage = ({ questions }: any) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-4">
       {questions?.map((item: any) => {
-        return <div key={item.id}>{item?.name}</div>;
+        return <Button key={item.id}>{item?.name}</Button>;
       })}
     </div>
   );
@@ -18,9 +19,13 @@ export const getStaticProps = async ({ params }: any) => {
   );
   const listQuestion = await request.json();
 
+  const menu = await fetch("https://demo-q-and-a.vercel.app/api/menu");
+  const menuData = await menu.json();
+
   return {
     props: {
       questions: listQuestion,
+      menuData,
     },
     revalidate: 10,
   };
