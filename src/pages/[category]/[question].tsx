@@ -46,7 +46,7 @@ export const getStaticProps = async ({ params }: any) => {
   const listQuestion = await listQuestionReq.json();
 
   const questionReq = await fetch(
-    `http://localhost:3000/api/question/${params?.question}`
+    `https://demo-q-and-a.vercel.app/api/question/${params?.question}`
   );
 
   const question = await questionReq.json();
