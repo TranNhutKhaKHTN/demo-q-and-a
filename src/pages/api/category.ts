@@ -18,6 +18,12 @@ const getCategories = (_: any, res: any) => {
       des: "Nạp tiền từ thẻ quốc tế/ thẻ ATM",
       menu: 1,
     },
+    {
+      id: 4,
+      name: "Update tài khoản",
+      des: "Update tài khoản",
+      menu: 1,
+    },
   ]);
 };
 

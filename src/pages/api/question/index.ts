@@ -25,6 +25,14 @@ const questions = (req: NextApiRequest, res: any) => {
         category: 3,
         name: "Nạp tiền từ thẻ quốc tế/ thẻ ATM",
       },
+      {
+        category: 4,
+        name: "Update account 1",
+      },
+      {
+        category: 4,
+        name: "Update account 2",
+      },
     ]?.filter((item) =>
       req?.query?.category ? category === item.category.toString() : true
     )
