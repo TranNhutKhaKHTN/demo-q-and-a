@@ -12,6 +12,8 @@ export const getStaticProps = async ({ params }: any) => {
   // );
   // const listQuestion = await request.json();
 
+  console.log(params);
+
   const menu = await fetch("https://demo-q-and-a.vercel.app/api/menu");
   const menuData = await menu.json();
 
@@ -25,15 +27,21 @@ export const getStaticProps = async ({ params }: any) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // const request = await fetch("https://demo-q-and-a.vercel.app/api/category");
-  // const category = await request.json();
+  const request = await fetch("https://demo-q-and-a.vercel.app/api/question");
+  const questions = await request.json();
 
-  // const paths = category.map((item: any) => ({
-  //   params: { category: item.id.toString() },
-  // }));
+  console.log("-----------------------");
+  console.log(questions);
+
+  const paths = questions.map((item: any) => ({
+    params: {
+      category: item.category?.toString(),
+      question: item?.id?.toString(),
+    },
+  }));
 
   return {
-    paths: [],
+    paths,
     fallback: true,
   };
 };
