@@ -18,16 +18,23 @@ const getCategories = (_: any, res: any) => {
       des: "Thẻ ATM",
       menu: 1,
     },
+
     {
       id: 4,
-      name: "Update tài khoản",
-      des: "Update tài khoản",
-      menu: 2,
+      name: "Cập nhật số tài khoản",
+      des: "Cập nhật số tài khoản",
+      menu: 3,
     },
     {
       id: 5,
-      name: "Gia đình",
-      des: "Gia đình",
+      name: "Cập nhật số điện thoại",
+      des: "Cập nhật số điện thoại",
+      menu: 3,
+    },
+    {
+      id: 6,
+      name: "Chuyển tiền từ tài khoản A sang B",
+      des: "Chuyển tiền từ tài khoản A sang B",
       menu: 2,
     },
   ]);

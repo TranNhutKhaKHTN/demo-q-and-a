@@ -64,6 +64,20 @@ export const QUESTIONS = [
     content:
       '<p style="margin-left:0px;">Khi cần&nbsp;hủy tài khoản MoMo, bạn vui lòng liên hệ với bộ phận CSKH qua số 1900 54 54 41 và cung cấp các thông tin sau:</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Họ tên chủ tài khoản</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Số CMND</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Số dư tài khoản MoMo</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Tài khoản ngân hàng đang liên kết (nếu có)</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Email</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Địa chỉ</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">Sau khi nhận được thông tin từ bạn, Ví MoMo sẽ chủ động xác minh và hỗ trợ hủy tài khoản.</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;"><i>Lưu ý: Trước khi bạn gửi thông tin yêu cầu hủy tài khoản, vui lòng hủy liên kết giữa tài khoản MoMo và tài khoản ngân hàng. Trong trường hợp tài khoản MoMo của bạn vẫn còn số dư, khi MoMo tiến hành hủy tài khoản, số dư trong tài khoản sẽ bị mất. Tài khoản MoMo đã hủy sẽ không thể khôi phục lại.</i></p>',
   },
+  {
+    id: 10,
+    category: 6,
+    name: "Gia đình 2",
+    content:
+      '<p style="margin-left:0px;">Khi cần&nbsp;hủy tài khoản MoMo, bạn vui lòng liên hệ với bộ phận CSKH qua số 1900 54 54 41 và cung cấp các thông tin sau:</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Họ tên chủ tài khoản</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Số CMND</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Số dư tài khoản MoMo</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Tài khoản ngân hàng đang liên kết (nếu có)</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Email</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Địa chỉ</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">Sau khi nhận được thông tin từ bạn, Ví MoMo sẽ chủ động xác minh và hỗ trợ hủy tài khoản.</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;"><i>Lưu ý: Trước khi bạn gửi thông tin yêu cầu hủy tài khoản, vui lòng hủy liên kết giữa tài khoản MoMo và tài khoản ngân hàng. Trong trường hợp tài khoản MoMo của bạn vẫn còn số dư, khi MoMo tiến hành hủy tài khoản, số dư trong tài khoản sẽ bị mất. Tài khoản MoMo đã hủy sẽ không thể khôi phục lại.</i></p>',
+  },
+  {
+    id: 11,
+    category: 6,
+    name: "Gia đình 2",
+    content:
+      '<p style="margin-left:0px;">Khi cần&nbsp;hủy tài khoản MoMo, bạn vui lòng liên hệ với bộ phận CSKH qua số 1900 54 54 41 và cung cấp các thông tin sau:</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Họ tên chủ tài khoản</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Số CMND</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Số dư tài khoản MoMo</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Tài khoản ngân hàng đang liên kết (nếu có)</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Email</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">- Địa chỉ</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;">Sau khi nhận được thông tin từ bạn, Ví MoMo sẽ chủ động xác minh và hỗ trợ hủy tài khoản.</p><p style="margin-left:0px;">&nbsp;</p><p style="margin-left:0px;"><i>Lưu ý: Trước khi bạn gửi thông tin yêu cầu hủy tài khoản, vui lòng hủy liên kết giữa tài khoản MoMo và tài khoản ngân hàng. Trong trường hợp tài khoản MoMo của bạn vẫn còn số dư, khi MoMo tiến hành hủy tài khoản, số dư trong tài khoản sẽ bị mất. Tài khoản MoMo đã hủy sẽ không thể khôi phục lại.</i></p>',
+  },
 ];
 
 const questions = (req: NextApiRequest, res: any) => {

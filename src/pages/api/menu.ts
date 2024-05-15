@@ -8,6 +8,10 @@ const menus = async (req: any, res: any) => {
       id: 2,
       name: "Chuyển/Nhận tiền",
     },
+    {
+      id: 3,
+      name: "Cập nhật thông tin",
+    },
   ];
 
   const categoryReq = await fetch(
