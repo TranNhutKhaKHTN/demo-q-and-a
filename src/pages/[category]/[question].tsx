@@ -1,21 +1,12 @@
 import { GetStaticPaths } from "next";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 const Question = ({ question, listQuestion }: any) => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
   return (
     <div>
       <div className="text-lg font-bold">{question?.name}</div>
       <hr className="mt-2 mb-4" />
-      {isClient ? (
-        <p dangerouslySetInnerHTML={{ __html: question?.content }} />
-      ) : null}
+      <div dangerouslySetInnerHTML={{ __html: question?.content }} />
       <div className="text-lg font-bold mt-10">Bài viết liên quan</div>
       <div className="space-y-4 py-4">
         {listQuestion?.map((item: any) => {
