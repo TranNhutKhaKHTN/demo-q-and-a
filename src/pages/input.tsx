@@ -5,7 +5,7 @@ const Input = () => {
 
   useEffect(() => {
     if (ref.current) {
-      ref.current?.focus();
+      ref.current?.click();
     }
   }, [ref]);
 
