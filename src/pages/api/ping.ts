@@ -78,7 +78,6 @@ export default async function handler(req: any, res: any) {
   try {
     const response = await ping.promise.probe(url, {
       timeout: 10,
-      extra: ["-i", "2"],
     });
 
     return res.status(200).json(response);
