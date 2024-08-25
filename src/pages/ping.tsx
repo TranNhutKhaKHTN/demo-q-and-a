@@ -1,12 +1,45 @@
 // pages/index.js
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+// const { exec } = require("child_process");
+
+// var ping = require("ping");
+
+// const ping = (url) => {
+//   exec(`ping ${url}`, (error, stdout, stderr) => {
+//     if (error) {
+//       console.error(`Error: ${error.message}`);
+//       return;
+//     }
+
+//     if (stderr) {
+//       console.error(`Stderr: ${stderr}`);
+//       return;
+//     }
+
+//     console.log(`Output:\n${stdout}`);
+//   });
+// };
+
+// Ping www.google.com
 
 export default function Home() {
   const [url, setUrl] = useState("");
   const [pingResult, setPingResult] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  //   useEffect(() => {
+  //     ping("www.google.com");
+  //   }, []);
+
+  // useEffect(async () => {
+  //   const res = await ping.promise.probe("www.google.com", {
+  //     timeout: 10,
+  //     extra: ["-i", "2"],
+  //   });
+  //   console.log(res);
+  // }, []);
 
   const handlePing = async () => {
     setLoading(true);
@@ -37,7 +70,7 @@ export default function Home() {
         value={url}
         onChange={(e) => setUrl(e.target.value)}
         placeholder="Enter URL to ping"
-        className="rounded border px-3 py-1"
+        className="rounded border px-3"
       />
       <button
         onClick={handlePing}
